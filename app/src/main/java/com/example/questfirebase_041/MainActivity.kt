@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.questfirebase_041.ui.theme.QuestFirebase_041Theme
+import com.example.questfirebase_041.view.controllNagivasi.DataSiswaApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestFirebase_041Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    DataSiswaApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
